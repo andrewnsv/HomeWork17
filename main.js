@@ -78,10 +78,9 @@ console.log(student.getCourse());
 
 String.prototype.countAllUpperCase = function() {
   const arr = Array.from(this);
-  const count = arr.filter(el => el !== el.toLowerCase()).length;
-  return count;
+  return arr.filter(el => el !== el.toLowerCase()).length;
 }
 
-const myString = "S fdasd ASD asd ASD @1 Fd fF"
+const myString = "sAS fdasd ASD asd ASD @1 Fd fF"
 const res = myString.countAllUpperCase();
 console.log(res);
